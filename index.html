@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Rock Paper Scissors</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/7b1570b004.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <h1 class="header-title">
+      <span class="rock-color">ROCK</span>
+      <span class="paper-color">PAPER</span>
+      <span class="scissors-color">SCISSORS</span>
+    </h1>
+    <p class="header-description">
+      <span class="rock-color">ROCK</span> BEATS <span class="scissors-color">SCISSORS</span> ︱
+      <span class="scissors-color">SCISSORS</span> BEATS <span class="paper-color">PAPER</span> ︱
+      <span class="paper-color">PAPER</span> BEATS <span class="rock-color">ROCK</span>
+    </p>
+    <h4 class="header-body">FIRST TO SCORE 5 IS VICTORIOUS</h2>
+    <h4 class="header-body">SELECT YOUR WEAPON!</h2>
+  </header>
+  <!-- MAIN -->
+  <div class="main">
+    <!-- BUTTONS SECTION -->
+    <div class="buttons">
+      <button class="btn-weapon rock" id="btnRock"><i class="fa-regular fa-hand-back-fist"></i></button>
+      <button class="btn-weapon paper" id="btnPaper"><i class="fa-regular fa-hand"></i></button>
+      <button class="btn-weapon scissors" id="btnScissors"><i class="fa-regular fa-hand-scissors"></i></button>
+    </div>
+    <!-- SCORE SECTION -->
+    <div class="score-section">
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <h1>Player</h1>
+            <div class="weapon" id="playerWeapon">---</div>
+            <p class="score" id="playerScore">Score: 0</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <h1>Computer</h1>
+            <div class="weapon" id="computerWeapon">---</i></div>
+            <p class="score" id="computerScore">Score: 0</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="score-para" id="scorePara"></div>
+    <!-- MODAL SECTION -->
+    <div class="modal" id="modal">
+      <p class="modal-header" id="modalHeader"></p>
+      <p class="modal-header-two" id="modalHeaderTwo">Final score</p>
+      <p class="modal-score" id="modalScore"></p>
+      <button class="modal-button" id="btnModal">Play again</button>
+    </div>
+    <div class="modal-overlay" id="modalOverlay"></div>
+  </div>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>@johnvta</p>
+    <a href="https://github.com/johnvta/odin-rock-paper-scissors" target="_blank"><i class="fa-brands fa-github"></i></a>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
